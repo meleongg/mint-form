@@ -34,26 +34,61 @@
         </nav>
     </header>
     <main>
-        <section>
-
+        <section class='logo'>
+            <img class='intuit-logo' src="/mint-form/media/intuit.png" alt="intuit logo">
+            <div class='small-logos'>
+                <img src="/mint-form/media/mint-logo.jpg" alt="mint-logo">
+                <img class='logo-name' src="/mint-form/media/mint-name.svg" alt="mint-name">
+                <img src="/mint-form/media/quickbooks-logo.png" alt="quickbooks-logo">
+                <img class='logo-name' src="/mint-form/media/quickbooks-name.svg" alt="quickbooks-name">
+                <img src="/mint-form/media/turbotax-logo.png" alt="turbotax-logo">
+                <img class='logo-name' src="/mint-form/media/turbotax-name.svg" alt="turbotax-name">
+            </div>
         </section>
-        <section>
-
-        </section>
-        <section>
+        <section class='main-form'>
             <form action="/register" method='post'>
-
+                <legend>Create an Intuit Account</legend>
+                <div class='title-info'>
+                    <p>One account for everything Intuit, including Mint.</p>
+                    <a href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account">Learn more</a>
+                </div>
+                <div class='email'>
+                    <label for="email">Email address</label>
+                    <input name='email' type="email">
+                </div>
+                <div class='tel'>
+                    <label for="tel">Phone Number (recommended)</label>
+                    <input name='tel' type="tel">
+                    <small>Standard call, messaging or data rates may apply.</small>
+                </div>
+                <div class='password'>
+                    <label for="password">Password</label>
+                    <input name='password' type="password">
+                </div>
+                <button type='submit'><i class="fas fa-lock"></i>Create Account</button>
+                <small>By clicking Create Account, you agree to our
+                    <a href='https://www.mint.com/terms'>Terms</a> and have read and acknowledge our <a
+                        href='https://www.intuit.com/privacy/statement/'>Global Privacy Statement.</a></small>
             </form>
         </section>
-        <section>
-
+        <section class='recaptcha'>
+            <small>Invisible reCAPTCHA by Google <a href='https://www.google.com/intl/en/policies/privacy/'>Privacy
+                    Policy</a> and <a href='https://www.google.com/intl/en/policies/terms/'>Terms of Use.</a></small>
         </section>
     </main>
-    <section>
-
+    <section class='trademark'>
+        <div class='links'>
+            <a href="https://www.intuit.com/legal/">Legal</a>
+            <a href="https://www.intuit.com/privacy/statement/">Privacy</a>
+            <a href="http://security.intuit.com/">Security</a>
+        </div>
+        <p>© 2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are
+            registered trademarks of Intuit Inc.
+            Terms and conditions, features, support, pricing, and service options subject to change without notice.
+        </p>
     </section>
     <footer>
-
+        <a href="">Privacy Settings</a>
     </footer>
 </body>
 
