@@ -46,6 +46,11 @@ header {
     border-radius: 4px;
     border: 1px solid #4c4c4c;
     color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 26px;
 }
 
 .nav-text p {
@@ -80,7 +85,7 @@ a:hover {
     background-color: #fff;
     display: block;
     height: 100vh;
-    width: 30vw;
+    width: 380px;
     margin: 2vh auto 0 auto;
     border: 1px solid #c7c7c7;
     border-radius: 2px;
@@ -88,38 +93,168 @@ a:hover {
 
 form {
     display: grid;
-    grid-template-rows: 10% 8% 10% 10% 10% 10% 10%;
+    grid-template-rows: 10% 10% 15% 15% 15% 10% 15% 10%;
     justify-items: center;
     align-items: center;
     height: 100%;
     width: 100%;
 }
 
+.main-form legend {
+    padding-top: 20px;
+    font-size: 1.4rem;
+}
+
 .title-info {
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 80%;
+    font-size: 0.84rem;
 }
 
 .title-info a {
     align-self: center;
 }
 
+small {
+    font-size: 0.65rem;
+}
+
+form input {
+    padding: 6px 0;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #c7c7c7;
+    border-radius: 3px;
+    width: 100%;
+    align-self: center;
+}
+
+form label {
+    font-size: 0.9rem;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    height: 60px;
+}
+
+.tel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    height: 60px;
+    margin-top: 70px;
+}
+
+.main-form button {
+    background-color: #0077c5;
+    border-radius: 4px;
+    color: #fff;
+    justify-content: center;
+    font-size: 1rem;
+    border: none;
+    width: 80%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 86px;
+}
+
+.terms-privacy {
+    margin-top: 70px;
+    font-style: italic;
+    font-size: 0.75rem;
+    text-align: center;
+    color: #727272;
+    line-height: 1.5em;
+    width: 80%;
+    word-wrap: break-word;
+    padding-bottom: 40px;
+}
+
 /* Recaptcha */
 .recaptcha {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #ECEEF1;
-    height: 10vh;
+    height: 50%;
     width: 100%;
+    text-align: center;
 }
 
 /* Trademark */
 .trademark {
-    background-color: yellow;
+    color: #333;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 80px;
+    margin: 10px auto 0 auto;
+    font-size: 0.80rem;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.links {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.trademark a {
+    color: #333;
+}
+
+.trademark p {
+    padding-top: 10px;
 }
 
 /* Footer */
 footer {
+    display: flex;
+    height: 15%;
+}
+
+.bottom {
     background-color: #fff;
-    display: block;
-    height: 10%;
+    width: 100%;
+    height: 60%;
+}
+
+.privacy-settings {
+    background-color: #fff;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    cursor: pointer;
 }

@@ -28,7 +28,7 @@
                     </ul>
                 </li>
                 <li>
-                    <button><i class="fas fa-lock"></i>Sign In</button>
+                    <button><img src='/mint-form/media/lock.svg' alt='lock'>Sign In</button>
                 </li>
             </ul>
         </nav>
@@ -48,9 +48,11 @@
         <section class='main-form'>
             <form action="/register" method='post'>
                 <legend>Create an Intuit Account</legend>
+                <!-- <fieldset> -->
                 <div class='title-info'>
                     <p>One account for everything Intuit, including Mint.</p>
-                    <a href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account">Learn more</a>
+                    <a href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account">Learn
+                        more</a>
                 </div>
                 <div class='email'>
                     <label for="email">Email address</label>
@@ -65,15 +67,18 @@
                     <label for="password">Password</label>
                     <input name='password' type="password">
                 </div>
-                <button type='submit'><i class="fas fa-lock"></i>Create Account</button>
-                <small>By clicking Create Account, you agree to our
+                <button type='submit'><img src='/mint-form/media/lock.svg' alt='lock'>Create Account</button>
+                <small class='terms-privacy'>By clicking Create Account, you agree to our
                     <a href='https://www.mint.com/terms'>Terms</a> and have read and acknowledge our <a
                         href='https://www.intuit.com/privacy/statement/'>Global Privacy Statement.</a></small>
+                <!-- </fieldset> -->
+                <div class='recaptcha'>
+                    <small>Invisible reCAPTCHA by Google <a
+                            href='https://www.google.com/intl/en/policies/privacy/'>Privacy
+                            Policy</a> and <a href='https://www.google.com/intl/en/policies/terms/'>Terms of
+                            Use.</a></small>
+                </div>
             </form>
-        </section>
-        <section class='recaptcha'>
-            <small>Invisible reCAPTCHA by Google <a href='https://www.google.com/intl/en/policies/privacy/'>Privacy
-                    Policy</a> and <a href='https://www.google.com/intl/en/policies/terms/'>Terms of Use.</a></small>
         </section>
     </main>
     <section class='trademark'>
@@ -88,7 +93,9 @@
         </p>
     </section>
     <footer>
-        <a href="">Privacy Settings</a>
+        <div class='bottom'>
+            <a class='privacy-settings' href="">Privacy Settings</a>
+        </div>
     </footer>
 </body>
 
